@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0E2436"/>
+  <g stroke="#C7A45A" stroke-width="1" opacity="0.18" fill="none">
+    <path d="M0 80 H1200 M0 550 H1200"/>
+    <path d="M80 0 V630 M1120 0 V630"/>
+  </g>
+  <g fill="none" stroke="#C7A45A" stroke-width="2" opacity="0.85">
+    <path d="M120 470 H1080"/>
+    <path d="M120 320 H1080"/>
+    <path d="M120 470 L200 320 L280 470 L360 320 L440 470 L520 320 L600 470 L680 320 L760 470 L840 320 L920 470 L1000 320 L1080 470"/>
+    <path d="M200 320 V470 M360 320 V470 M520 320 V470 M680 320 V470 M840 320 V470 M1000 320 V470"/>
+  </g>
+  <text x="120" y="150" fill="#F6F2EA" font-family="Georgia, serif" font-size="76" font-weight="600">R. Chohfi Junior</text>
+  <text x="122" y="210" fill="#C7A45A" font-family="Georgia, serif" font-style="italic" font-size="40">Consultoria em Engenharia</text>
+  <text x="122" y="585" fill="#C7A45A" font-family="monospace" font-size="22" letter-spacing="3">DECISÕES CONFIÁVEIS · EXCELÊNCIA NOS RESULTADOS</text>
+</svg>

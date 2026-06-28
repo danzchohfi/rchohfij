@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RCJ — R. Chohfi Junior · Consultoria em Engenharia</title>
+<meta name="description" content="Consultoria técnica sênior em engenharia. Apoio à decisão técnica em projetos, planejamento, execução e desempenho de empreendimentos de infraestrutura e mobilidade urbana de alta complexidade. Decisões confiáveis. Excelência nos resultados.">
+<meta name="author" content="R. Chohfi Junior — Consultoria em Engenharia">
+<meta name="theme-color" content="#0E2436">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="RCJ — R. Chohfi Junior · Consultoria em Engenharia">
+<meta property="og:description" content="Apoio à decisão técnica em projetos de infraestrutura e mobilidade urbana de alta complexidade. Decisões confiáveis. Excelência nos resultados.">
+<meta property="og:image" content="assets/img/og.svg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+<!-- Preload critical fonts -->
+<link rel="preload" href="assets/fonts/Fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Inter-var.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="modulepreload" href="assets/js/vendor/three.module.min.js">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__inner">
+    <svg class="preloader__mark" viewBox="0 0 120 60" fill="none" stroke="currentColor" stroke-width="1">
+      <path class="pl-line" d="M2 50 H118"/>
+      <path class="pl-line" d="M2 50 L22 14 L42 50 L62 14 L82 50 L102 14 L118 50"/>
+      <path class="pl-line" d="M22 14 H102"/>
+    </svg>
+    <div class="preloader__meta">
+      <span class="mono" data-pl-count>00</span>
+      <span class="mono">RCJ · CONSULTORIA EM ENGENHARIA</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <div class="cursor__dot"></div>
+  <div class="cursor__ring"></div>
+</div>
+
+<!-- ============ GRID OVERLAY (decorative blueprint reticle) ============ -->
+<div class="grid-overlay" aria-hidden="true">
+  <span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <a href="#hero" class="brand" aria-label="RCJ — R. Chohfi Junior, início">
+    <svg class="brand__mark" viewBox="0 0 64 34" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+      <path d="M2 28 H62"/>
+      <path d="M2 28 L13 8 L24 28 L35 8 L46 28 L57 8"/>
+      <path d="M13 8 H57"/>
+    </svg>
+    <span class="brand__word">
+      <strong>RCJ</strong>
+      <em>R. Chohfi Junior</em>
+    </span>
+  </a>
+  <nav class="site-nav" aria-label="Navegação principal">
+    <a href="#rcj">A RCJ</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#tripe">Tripé</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#valor">Valor</a>
+  </nav>
+  <a class="btn btn--ghost header__cta" data-wa href="#contato">
+    <span class="btn__icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.11.82.83-3.03-.2-.31a8.18 8.18 0 0 1-1.26-4.36c0-4.54 3.69-8.23 8.24-8.23 4.54 0 8.23 3.69 8.23 8.23s-3.69 8.4-8.25 8.4zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.98-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.16 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
+    </span>
+    Falar no WhatsApp
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <nav aria-label="Navegação móvel">
+    <a href="#rcj"><span class="mono">01</span> A RCJ</a>
+    <a href="#servicos"><span class="mono">02</span> Serviços</a>
+    <a href="#tripe"><span class="mono">03</span> Tripé da Engenharia</a>
+    <a href="#experiencia"><span class="mono">04</span> Experiência</a>
+    <a href="#valor"><span class="mono">05</span> Valor Gerado</a>
+    <a href="#contato"><span class="mono">06</span> Contato</a>
+  </nav>
+  <a class="btn btn--gold" data-wa href="#contato">Falar no WhatsApp</a>
+</div>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <canvas class="hero__canvas" id="trussCanvas" aria-hidden="true"></canvas>
+
+  <!-- SVG fallback truss (shown when WebGL unavailable / reduced motion) -->
+  <svg class="hero__fallback" id="trussFallback" viewBox="0 0 1200 520" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+    <g class="truss-svg">
+      <path class="ts-line" d="M60 400 H1140"/>
+      <path class="ts-line" d="M60 160 H1140"/>
+      <path class="ts-line" d="M60 400 L180 160 L300 400 L420 160 L540 400 L660 160 L780 400 L900 160 L1020 400 L1140 160"/>
+      <path class="ts-line" d="M180 160 V400 M300 400 V160 M420 160 V400 M540 400 V160 M660 160 V400 M780 400 V160 M900 160 V400 M1020 400 V160"/>
+    </g>
+  </svg>
+
+  <div class="hero__inner">
+    <p class="eyebrow reveal" data-reveal>
+      <span class="mono">EST. 1984</span>
+      <span class="eyebrow__rule"></span>
+      <span class="mono">CONSULTORIA TÉCNICA · B2B</span>
+    </p>
+    <h1 class="hero__title">
+      <span class="line reveal" data-reveal>R. Chohfi Junior</span>
+      <span class="line line--serif reveal" data-reveal>Consultoria em Engenharia</span>
+    </h1>
+    <p class="hero__lead reveal" data-reveal>
+      Apoio à decisão técnica em projetos, planejamento, execução e desempenho
+      de empreendimentos de infraestrutura e mobilidade urbana de alta complexidade.
+    </p>
+    <p class="hero__tagline reveal" data-reveal>Decisões confiáveis. Excelência nos resultados.</p>
+    <div class="hero__actions reveal" data-reveal>
+      <a class="btn btn--gold" data-wa href="#contato">
+        <span class="btn__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm4.52 11.99c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.98-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.16 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
+        </span>
+        Falar no WhatsApp
+      </a>
+      <a class="btn btn--line" href="#rcj">Conhecer a RCJ</a>
+    </div>
+  </div>
+
+  <div class="hero__footnote">
+    <span class="mono">↓ ROLE PARA EXPLORAR</span>
+    <span class="mono hero__coord" id="heroCoord">N 23°33' · W 46°38'</span>
+  </div>
+
+  <!-- decorative cotas / dimension line -->
+  <div class="hero__dim" aria-hidden="true">
+    <span class="dim__tick"></span>
+    <span class="dim__label mono">MODELO ESTRUTURAL — TRELIÇA</span>
+    <span class="dim__tick"></span>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>QUALIDADE</span><i></i><span>TEMPO</span><i></i><span>CUSTO</span><i></i>
+    <span>CONSTRUTIBILIDADE</span><i></i><span>RASTREABILIDADE</span><i></i><span>PREVISIBILIDADE</span><i></i>
+    <span>QUALIDADE</span><i></i><span>TEMPO</span><i></i><span>CUSTO</span><i></i>
+    <span>CONSTRUTIBILIDADE</span><i></i><span>RASTREABILIDADE</span><i></i><span>PREVISIBILIDADE</span><i></i>
+  </div>
+</div>
+
+<!-- ============ A RCJ ============ -->
+<section class="section section--rcj" id="rcj">
+  <div class="section__head">
+    <span class="section__index mono">01 — A RCJ</span>
+    <h2 class="section__title reveal" data-reveal>
+      Apoio à decisão técnica,<br><span class="serif-accent">do projeto à entrega.</span>
+    </h2>
+  </div>
+  <div class="rcj__grid">
+    <div class="rcj__lead reveal" data-reveal>
+      <p>
+        A RCJ apoia concessionárias, gerenciadoras, construtoras, projetistas e
+        contratantes na tomada de decisões técnicas relacionadas a projetos,
+        planejamento, execução e desempenho de empreendimentos.
+      </p>
+      <p>
+        Nossa atuação concentra-se na avaliação de alternativas técnicas, análise de
+        riscos, fundamentação de decisões e identificação de oportunidades de
+        aperfeiçoamento técnico e construtivo — sempre com método, evidência e
+        rastreabilidade.
+      </p>
+    </div>
+    <div class="rcj__pillars">
+      <div class="pillar reveal" data-reveal>
+        <span class="pillar__num mono">A.</span>
+        <h3>Decisão Técnica</h3>
+        <p>Avaliação de alternativas com critério, comparando soluções por desempenho, risco e custo.</p>
+      </div>
+      <div class="pillar reveal" data-reveal>
+        <span class="pillar__num mono">B.</span>
+        <h3>Análise de Risco</h3>
+        <p>Identificação antecipada de riscos técnicos, construtivos e de interface entre disciplinas.</p>
+      </div>
+      <div class="pillar reveal" data-reveal>
+        <span class="pillar__num mono">C.</span>
+        <h3>Fundamentação</h3>
+        <p>Pareceres consistentes e auditáveis que sustentam cada decisão tomada.</p>
+      </div>
+      <div class="pillar reveal" data-reveal>
+        <span class="pillar__num mono">D.</span>
+        <h3>Aperfeiçoamento</h3>
+        <p>Oportunidades de otimização técnica e construtiva ao longo do empreendimento.</p>
+      </div>
+    </div>
+  </div>
+  <!-- blueprint divider -->
+  <svg class="blueprint-rule" viewBox="0 0 1000 40" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true">
+    <path class="bp-draw" d="M0 20 H1000"/>
+    <path class="bp-draw" d="M0 12 V28 M250 12 V28 M500 8 V32 M750 12 V28 M1000 12 V28"/>
+    <circle class="bp-draw" cx="500" cy="20" r="5"/>
+  </svg>
+</section>
+
+<!-- ============ SERVIÇOS ============ -->
+<section class="section section--servicos" id="servicos">
+  <div class="section__head">
+    <span class="section__index mono">02 — SERVIÇOS</span>
+    <h2 class="section__title reveal" data-reveal>
+      Como a RCJ <span class="serif-accent">contribui.</span>
+    </h2>
+  </div>
+
+  <div class="services">
+    <article class="service reveal" data-reveal>
+      <header class="service__top">
+        <span class="service__tag mono">ATP</span>
+        <span class="service__no mono">/ 01</span>
+      </header>
+      <h3 class="service__title">Acompanhamento Técnico de Projetos</h3>
+      <p class="service__ctx">
+        Empreendimentos complexos envolvem múltiplas disciplinas, grande volume de
+        informações, interfaces críticas e decisões sucessivas ao longo do
+        desenvolvimento dos projetos.
+      </p>
+      <ul class="service__list">
+        <li>Análise crítica de projetos e documentos ao longo do desenvolvimento</li>
+        <li>Identificação antecipada de conflitos entre disciplinas</li>
+        <li>Verificação de premissas, normas e condicionantes de projeto</li>
+        <li>Apoio à coordenação e à compatibilização das soluções</li>
+      </ul>
+      <p class="service__result mono">→ Maior maturidade de projeto · menos retrabalho · decisões fundamentadas</p>
+    </article>
+
+    <article class="service reveal" data-reveal>
+      <header class="service__top">
+        <span class="service__tag mono">CQP</span>
+        <span class="service__no mono">/ 02</span>
+      </header>
+      <h3 class="service__title">Controle da Qualidade de Projetos</h3>
+      <p class="service__ctx">
+        Projetos relevantes exigem verificações independentes, rastreabilidade das
+        análises e controle sistemático da documentação técnica.
+      </p>
+      <ul class="service__list">
+        <li>Verificações independentes da documentação técnica</li>
+        <li>Rastreabilidade de análises, comentários e respostas</li>
+        <li>Controle sistemático de revisões e pendências</li>
+        <li>Padronização de critérios de aceitação</li>
+      </ul>
+      <p class="service__result mono">→ Documentação confiável e auditável · menor risco de não conformidade</p>
+    </article>
+
+    <article class="service reveal" data-reveal>
+      <header class="service__top">
+        <span class="service__tag mono">RIA</span>
+        <span class="service__no mono">/ 03</span>
+      </header>
+      <h3 class="service__title">Revisão Independente e Auditoria Técnica</h3>
+      <p class="service__ctx">
+        Decisões importantes envolvem alternativas técnicas, condicionantes, riscos
+        e impactos potenciais em qualidade, tempo, custo e construtibilidade.
+      </p>
+      <ul class="service__list">
+        <li>Avaliação independente de alternativas e premissas</li>
+        <li>Análise de riscos, condicionantes e impactos potenciais</li>
+        <li>Parecer técnico fundamentado para suporte à decisão</li>
+        <li>Identificação de oportunidades de otimização</li>
+      </ul>
+      <p class="service__result mono">→ Decisões respaldadas · transparência · segurança técnica</p>
+    </article>
+
+    <article class="service reveal" data-reveal>
+      <header class="service__top">
+        <span class="service__tag mono">ECD</span>
+        <span class="service__no mono">/ 04</span>
+      </header>
+      <h3 class="service__title">Engenharia, Conhecimento e Apoio à Decisão</h3>
+      <p class="service__ctx">
+        Empreendimentos produzem grande quantidade de informações que frequentemente
+        permanecem dispersas entre documentos, planilhas, relatórios e sistemas.
+      </p>
+      <ul class="service__list">
+        <li>Organização e estruturação do conhecimento técnico</li>
+        <li>Consolidação de informações dispersas em bases consultáveis</li>
+        <li>Indicadores e sínteses para apoio à gestão</li>
+        <li>Transformação digital aplicada à engenharia</li>
+      </ul>
+      <p class="service__result mono">→ Informação acessível e rastreável · decisões ágeis e consistentes</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ TRIPÉ ============ -->
+<section class="section section--tripe" id="tripe">
+  <div class="section__head">
+    <span class="section__index mono">03 — O TRIPÉ DA ENGENHARIA</span>
+    <h2 class="section__title reveal" data-reveal>
+      Qualidade · Tempo · <span class="serif-accent">Custo.</span>
+    </h2>
+    <p class="section__sub reveal" data-reveal>
+      Objetivos permanentes de todo empreendimento. Identificamos oportunidades que
+      contribuem, de forma equilibrada, para os três.
+    </p>
+  </div>
+
+  <div class="tripod">
+    <svg class="tripod__diagram" viewBox="0 0 300 270" fill="none" aria-hidden="true">
+      <path class="tp-draw" d="M150 30 L40 230 L260 230 Z" stroke="currentColor" stroke-width="1.2"/>
+      <path class="tp-draw" d="M150 30 L150 230 M40 230 L150 130 L260 230 M150 130 L150 30" stroke="currentColor" stroke-width="0.7" stroke-dasharray="3 4"/>
+      <circle class="tp-node" cx="150" cy="30" r="4" fill="currentColor"/>
+      <circle class="tp-node" cx="40" cy="230" r="4" fill="currentColor"/>
+      <circle class="tp-node" cx="260" cy="230" r="4" fill="currentColor"/>
+    </svg>
+
+    <div class="tripod__cards">
+      <div class="tcard reveal" data-reveal>
+        <span class="tcard__k mono">Q</span>
+        <h3>Qualidade</h3>
+        <p>Conformidade técnica, atendimento a normas e desempenho. Redução de não conformidades e de falhas de projeto.</p>
+      </div>
+      <div class="tcard reveal" data-reveal>
+        <span class="tcard__k mono">T</span>
+        <h3>Tempo</h3>
+        <p>Previsibilidade de prazos, antecipação de interferências e fluidez no processo decisório.</p>
+      </div>
+      <div class="tcard reveal" data-reveal>
+        <span class="tcard__k mono">C</span>
+        <h3>Custo</h3>
+        <p>Construtibilidade, otimização de soluções e redução de retrabalho e desperdício.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIÊNCIA ============ -->
+<section class="section section--exp" id="experiencia">
+  <div class="section__head">
+    <span class="section__index mono">04 — EXPERIÊNCIA APLICADA</span>
+    <h2 class="section__title reveal" data-reveal>
+      Mais de quatro décadas <span class="serif-accent">de engenharia.</span>
+    </h2>
+  </div>
+
+  <div class="exp__stats">
+    <div class="stat reveal" data-reveal>
+      <span class="stat__num" data-count="40" data-suffix="+">0</span>
+      <span class="stat__label mono">ANOS DE ATUAÇÃO</span>
+    </div>
+    <div class="stat reveal" data-reveal>
+      <span class="stat__num" data-count="2">0</span>
+      <span class="stat__label mono">LINHAS DE METRÔ · SP</span>
+    </div>
+    <div class="stat reveal" data-reveal>
+      <span class="stat__num" data-count="3">0</span>
+      <span class="stat__label mono">TIPOLOGIAS ESTRUTURAIS</span>
+    </div>
+    <div class="stat reveal" data-reveal>
+      <span class="stat__num">OAE</span>
+      <span class="stat__label mono">OBRAS DE ARTE ESPECIAIS</span>
+    </div>
+  </div>
+
+  <div class="exp__body">
+    <div class="exp__text reveal" data-reveal>
+      <p>
+        Mais de quatro décadas de atuação profissional permitiram o desenvolvimento de
+        uma visão integrada de engenharia, infraestrutura, sistemas de informação,
+        gestão técnica e apoio à decisão.
+      </p>
+      <p>
+        Participação em empreendimentos de infraestrutura e mobilidade urbana de
+        elevada complexidade, incluindo trabalhos associados às
+        <strong>Linhas Laranja e Prata do Metrô de São Paulo</strong>.
+      </p>
+      <p class="exp__note">
+        O objetivo não é apenas verificar conformidade, mas contribuir para decisões
+        tecnicamente consistentes, executáveis e alinhadas aos objetivos do empreendimento.
+      </p>
+    </div>
+    <div class="exp__tags reveal" data-reveal>
+      <span class="section__index mono">APLICADA A</span>
+      <ul>
+        <li>Obras de Arte Especiais (OAE)</li>
+        <li>Estruturas de concreto armado</li>
+        <li>Estruturas protendidas</li>
+        <li>Estruturas metálicas</li>
+        <li>Infraestrutura e mobilidade urbana</li>
+        <li>Sistemas de informação e gestão técnica</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VALOR GERADO ============ -->
+<section class="section section--valor" id="valor">
+  <div class="section__head">
+    <span class="section__index mono">05 — VALOR GERADO</span>
+    <h2 class="section__title reveal" data-reveal>
+      Resultados que vão além <span class="serif-accent">da análise de documentos.</span>
+    </h2>
+  </div>
+
+  <div class="valor__grid">
+    <article class="vcard reveal" data-reveal>
+      <span class="vcard__no mono">01</span>
+      <h3>Riscos</h3>
+      <p>Identificação e mitigação antecipada de riscos técnicos e construtivos, antes que se tornem custo.</p>
+    </article>
+    <article class="vcard reveal" data-reveal>
+      <span class="vcard__no mono">02</span>
+      <h3>Construtibilidade</h3>
+      <p>Soluções executáveis, compatíveis com meios, métodos e condicionantes de obra.</p>
+    </article>
+    <article class="vcard reveal" data-reveal>
+      <span class="vcard__no mono">03</span>
+      <h3>Previsibilidade</h3>
+      <p>Planejamento com sequência lógica, marcos coerentes e decisões no tempo certo.</p>
+    </article>
+    <article class="vcard reveal" data-reveal>
+      <span class="vcard__no mono">04</span>
+      <h3>Rastreabilidade</h3>
+      <p>Cada análise e decisão registrada de forma auditável, sustentando o equilíbrio entre qualidade, tempo e custo.</p>
+    </article>
+  </div>
+
+  <!-- COMO TRABALHAMOS -->
+  <div class="process">
+    <span class="section__index mono">COMO TRABALHAMOS</span>
+    <ol class="process__steps">
+      <li class="reveal" data-reveal><span class="mono">01</span><strong>Contexto</strong><em>Entendimento dos objetivos e condicionantes do empreendimento.</em></li>
+      <li class="reveal" data-reveal><span class="mono">02</span><strong>Análise</strong><em>Avaliação técnica, levantamento de riscos e alternativas.</em></li>
+      <li class="reveal" data-reveal><span class="mono">03</span><strong>Fundamentação</strong><em>Pareceres e recomendações claras, auditáveis e executáveis.</em></li>
+      <li class="reveal" data-reveal><span class="mono">04</span><strong>Acompanhamento</strong><em>Suporte contínuo e rastreabilidade ao longo das decisões.</em></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ CONTATO / CTA ============ -->
+<section class="section section--contato" id="contato">
+  <div class="contato__inner">
+    <svg class="contato__truss" viewBox="0 0 600 120" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true">
+      <path class="bp-draw" d="M20 90 H580"/>
+      <path class="bp-draw" d="M20 30 H580"/>
+      <path class="bp-draw" d="M20 90 L80 30 L140 90 L200 30 L260 90 L320 30 L380 90 L440 30 L500 90 L560 30 L580 90"/>
+    </svg>
+    <p class="eyebrow eyebrow--center reveal" data-reveal>
+      <span class="mono">CONTATO DIRETO</span>
+    </p>
+    <h2 class="contato__title reveal" data-reveal>
+      Vamos discutir a <span class="serif-accent">decisão técnica</span><br>do seu empreendimento.
+    </h2>
+    <p class="contato__tagline reveal" data-reveal>Decisões confiáveis. Excelência nos resultados.</p>
+    <a class="btn btn--gold btn--lg" data-wa href="#contato">
+      <span class="btn__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm4.52 11.99c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.98-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.16 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
+      </span>
+      Falar no WhatsApp
+    </a>
+    <p class="contato__meta mono reveal" data-reveal>
+      (11) 98102-8224 &nbsp;·&nbsp; rchohfij@gmail.com
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <svg class="brand__mark" viewBox="0 0 64 34" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+        <path d="M2 28 H62"/>
+        <path d="M2 28 L13 8 L24 28 L35 8 L46 28 L57 8"/>
+        <path d="M13 8 H57"/>
+      </svg>
+      <div>
+        <strong>R. Chohfi Junior</strong>
+        <span class="mono">CONSULTORIA EM ENGENHARIA</span>
+      </div>
+    </div>
+    <p class="footer__desc">
+      Consultoria sênior em engenharia, conhecimento técnico e transformação digital.
+      Apoio à decisão, fundamentação técnica e aperfeiçoamento de empreendimentos.
+    </p>
+  </div>
+  <div class="footer__bottom">
+    <span class="mono">© <span id="year">2026</span> R. CHOHFI JUNIOR · CONSULTORIA EM ENGENHARIA</span>
+    <span class="mono">DECISÕES CONFIÁVEIS · EXCELÊNCIA NOS RESULTADOS</span>
+  </div>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a class="wa-float" data-wa href="#contato" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.11.82.83-3.03-.2-.31a8.18 8.18 0 0 1-1.26-4.36c0-4.54 3.69-8.23 8.24-8.23 4.54 0 8.23 3.69 8.23 8.23s-3.69 8.4-8.25 8.4zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.98-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.16 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
+  <span class="wa-float__pulse" aria-hidden="true"></span>
+</a>
+
+<!-- ============ SCRIPTS ============ -->
+<script defer src="assets/js/vendor/gsap.min.js"></script>
+<script defer src="assets/js/vendor/ScrollTrigger.min.js"></script>
+<script defer src="assets/js/vendor/lenis.min.js"></script>
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
