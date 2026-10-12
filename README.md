@@ -68,15 +68,30 @@ assets/
 ## Deploy
 
 ### GitHub Pages
-1. *Settings → Pages → Branch* → selecione a branch e a pasta raiz (`/`).
-2. O arquivo `.nojekyll` já está presente (evita o processamento Jekyll).
+Publicado pelo workflow `.github/workflows/deploy.yml` a cada push na branch
+(ou manualmente em *Actions → Deploy site to GitHub Pages → Run workflow*).
+Em *Settings → Pages → Build and deployment*, a origem deve ser **GitHub Actions**.
+O arquivo `.nojekyll` já está presente (evita o processamento Jekyll).
 
 ### Vercel
 *Import Project* → framework **Other** → output dir = raiz. Sem comando de build.
 
-### Domínio + HTTPS
-Adicione um arquivo `CNAME` na raiz com o domínio (ex.: `rcj.eng.br`) e aponte o DNS.
-O HTTPS é provisionado automaticamente pelo GitHub Pages / Vercel.
+### Domínio + HTTPS (rchohfij.com.br)
+Com deploy via GitHub Actions **não se usa arquivo `CNAME`** (o GitHub o ignora): o domínio
+é definido só em *Settings → Pages → Custom domain*.
+
+DNS no registro.br (*Configurar zona DNS*, modo avançado):
+
+| Tipo  | Nome           | Valor                       |
+|-------|----------------|-----------------------------|
+| A     | *(em branco)*  | `185.199.108.153`           |
+| A     | *(em branco)*  | `185.199.109.153`           |
+| A     | *(em branco)*  | `185.199.110.153`           |
+| A     | *(em branco)*  | `185.199.111.153`           |
+| CNAME | `www`          | `danzchohfi.github.io`      |
+
+Depois que o DNS propagar, marque *Enforce HTTPS* em *Settings → Pages*
+(o certificado é emitido automaticamente e pode levar até 24 h).
 
 ---
 
