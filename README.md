@@ -36,6 +36,22 @@ Fontes (Fraunces, Inter, IBM Plex Mono) e bibliotecas são **auto-hospedadas** e
 
 Somente WhatsApp — botão flutuante + CTAs no hero e no rodapé, com mensagem pré-preenchida.
 
+## Galeria de aplicativos
+
+A seção **Galeria** (`#galeria`, menu "Galeria") reúne os aplicativos que a RCJ está
+desenvolvendo. Os cards ficam direto no `index.html`, dentro de `<div class="gallery">`.
+
+Para adicionar um aplicativo:
+
+1. Copie o modelo comentado logo acima de `.gallery` no `index.html`.
+2. Cole-o dentro de `.gallery`, no lugar de um card "Em breve" (`app-card--soon`).
+3. Ajuste link, categoria (`app-card__tag`), nome, descrição e status
+   (`app-card__status--live` = "No ar"; sem o modificador = "Em breve").
+4. Imagem opcional, proporção 16:10, em `assets/img/galeria/`. Sem imagem, mantenha
+   o `<svg>` de blueprint dos cards "Em breve".
+
+A grade se ajusta sozinha (1 / 2 / 3 colunas), com qualquer quantidade de cards.
+
 ## Estrutura
 
 ```

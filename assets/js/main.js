@@ -144,7 +144,7 @@ $$('a[href^="#"]').forEach((a) => {
   }
 
   // Draw blueprint rules + tripod when scrolled into view
-  $$(".blueprint-rule, .contato__truss, .tripod__diagram").forEach((wrap) => {
+  $$(".blueprint-rule, .contato__truss, .tripod__diagram, .app-card__thumb").forEach((wrap) => {
     const lines = $$(".bp-draw, .tp-draw", wrap);
     const nodes = $$(".tp-node", wrap);
     if (!lines.length) return;
@@ -207,7 +207,7 @@ $$('a[href^="#"]').forEach((a) => {
     requestAnimationFrame(loop);
   };
   loop();
-  $$('a, button, [data-wa], .service, .vcard, .pillar, .tcard').forEach((el) => {
+  $$('a, button, [data-wa], .service, .vcard, .pillar, .tcard, .app-card').forEach((el) => {
     el.addEventListener("mouseenter", () => cur.classList.add("is-hover"));
     el.addEventListener("mouseleave", () => cur.classList.remove("is-hover"));
   });
